@@ -1,1 +1,17 @@
-This is new page
+<form action="/users" accept-charset="UTF-8" method="post">
+  <input type="hidden" name"authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="username">Username : 
+    <input type="text" name="user[username]" id="username">
+  </label>
+
+  <label for="email"> Email :
+    <input type="email" name="user[email]" id="email">
+  </label>
+
+  <label for="password"> Password :
+    <input type="password" name="user[password]" id="password">
+  </label>
+
+  <input type="submit" value="Submit">
+</form>
